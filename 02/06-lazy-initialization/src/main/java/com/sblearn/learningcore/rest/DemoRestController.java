@@ -13,7 +13,7 @@ public class DemoRestController {
 
     private Coach myCoach;
     @Autowired // set the dependency
-    public DemoRestController(@Qualifier("baseballCoach") Coach coach) {
+    public void setMyCoach(@Qualifier("soccerCoach") Coach coach) {
         myCoach = coach;
     }
 
